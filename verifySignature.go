@@ -11,7 +11,7 @@ import (
 
 // VerifyRequest 输入参数
 type VerifyRequest struct {
-	CAIP122Message string // caip122://eip155:1/0x1234abcd?nonce=abc123
+	CAIP122Message string // caip122://eip155:1/0x你的钱包地址?nonce=xxx
 	Signature      string // EVM: hex; Solana/Sui: base64
 	PublicKey      string // Solana: base58; Sui: base64
 }
@@ -19,8 +19,8 @@ type VerifyRequest struct {
 // VerifyResult 返回结果
 type VerifyResult struct {
 	ChainID string // e.g., eip155:1
-	Address string // e.g., 0x1234abcd
-	Nonce   string // e.g., abc123
+	Address string // e.g., 0x你的钱包地址
+	Nonce   string // e.g., xxx
 	Valid   bool   // 是否验证成功
 	Error   error  // 错误信息（可为空）
 }
