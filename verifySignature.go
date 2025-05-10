@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	caip "github.com/yizuo66/siwx-go/caip122"
+	caip "github.com/yizuo998/siwx-go/caip122"
 )
 
 // VerifyRequest 输入参数

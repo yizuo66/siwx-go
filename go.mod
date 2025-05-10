@@ -1,4 +1,4 @@
-module github.com/yizuo66/siwx-go
+module github.com/yizuo998/siwx-go
 
 go 1.23.0
 

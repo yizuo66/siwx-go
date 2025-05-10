@@ -20,7 +20,7 @@
 通过 `go get` 安装 `siwx-go`：
 
 ```bash 
-go get github.com/yourname/siwx-go
+go get github.com:yizuo998/siwx-go.git
 ```
 
 ## 快速开始
@@ -30,7 +30,7 @@ go get github.com/yourname/siwx-go
 ```
 import (
 	"fmt"
-	"github.com/yourname/siwx-go"
+	"github.com/yizuo998/siwx-go"
 )
 
 func main() {
@@ -102,6 +102,6 @@ make tidy
 ## 贡献与支持
 欢迎提交 Issue 和 Pull Request，贡献你的代码或改进建议！
 
-GitHub: https://github.com/yizuo66/siwx-go#
+GitHub: https://github.com/yizuo998/siwx-go#
 
 Email: yizuo998@gmail.com
