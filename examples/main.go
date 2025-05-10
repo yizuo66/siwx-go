@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/yourname/siwx-go"
+	"github.com/yizuo66/siwx-go"
 )
 
 func main() {
