@@ -25,30 +25,11 @@ go get github.com:yizuo998/siwx-go.git
 
 ## 快速开始
 
-### 示例代码
+### 前端示例代码
+详细的示例代码请参考 [examples/frontend/SIWXLogin.jsx](examples/frontend/SIWXLogin.jsx)
 
-```
-import (
-	"fmt"
-	"github.com/yizuo998/siwx-go"
-)
-
-func main() {
-	req := siwx.VerifyRequest{
-		CAIP122Message: "caip122://eip155:1/0x1234abcd?nonce=abc123",
-		Signature:      "0x...",
-		PublicKey:      "",
-	}
-
-	result := siwx.Verify(req)
-
-	if result.Valid {
-		fmt.Println("✅ 验证成功:", result.Address, result.ChainID)
-	} else {
-		fmt.Println("❌ 验证失败:", result.Error)
-	}
-}
-```
+### 后端示例代码
+详细的示例代码请参考 [examples/backend/main.go](examples/backend/main.go)
 
 ### 参数说明
 
