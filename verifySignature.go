@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/yizuo66/siwx-go/caip122/chain"
+	"github.com/yizuo66/siwx-go/caip122"
 )
 
 // VerifyRequest 输入参数
@@ -35,11 +35,11 @@ func Verify(req VerifyRequest) VerifyResult {
 	var ok bool
 	switch {
 	case strings.HasPrefix(chainID, "eip155"):
-		ok, err = chain.VerifyEthereumSignature(address, req.Signature, req.CAIP122Message)
+		ok, err = caip122.VerifyEthereumSignature(address, req.Signature, req.CAIP122Message)
 	case strings.HasPrefix(chainID, "solana"):
-		ok, err = chain.VerifySolanaSignature(req.PublicKey, req.Signature, req.CAIP122Message)
+		ok, err = caip122.VerifySolanaSignature(req.PublicKey, req.Signature, req.CAIP122Message)
 	case strings.HasPrefix(chainID, "sui"):
-		ok, err = chain.VerifySuiSignature(req.PublicKey, req.Signature, req.CAIP122Message)
+		ok, err = caip122.VerifySuiSignature(req.PublicKey, req.Signature, req.CAIP122Message)
 	default:
 		err = errors.New("unsupported chain")
 	}

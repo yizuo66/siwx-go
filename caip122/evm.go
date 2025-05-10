@@ -1,4 +1,4 @@
-package chain
+package caip122
 
 import (
 	"encoding/hex"
